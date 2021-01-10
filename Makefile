@@ -4,5 +4,11 @@ start:
 ps:
 	docker-compose ps
 
-install:
+build:
 	docker-compose up -d
+
+stop:
+	docker-compose stop
+
+stopsql:
+	systemctl stop mysql
